@@ -1,4 +1,4 @@
-'use strict;'
+'use strict';
 
 import riot from 'riot';
 import './app/tags';
