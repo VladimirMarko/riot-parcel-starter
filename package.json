@@ -8,6 +8,7 @@
     "url": "https://github.com/VladimirMarko/riot-parcel-starter"
   },
   "scripts": {
+    "start": "[ -d node_modules ] || npm install && npm run watch",
     "build": "npm run build:riot & npm run build:parcel",
     "build:riot": "riot --ext tag.html app/ app/tags.js",
     "build:parcel": "parcel build index.html",
