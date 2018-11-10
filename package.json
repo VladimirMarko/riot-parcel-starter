@@ -1,0 +1,33 @@
+{
+  "name": "riot-parcel-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate for a simple Riot project using Parcel.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VladimirMarko/riot-parcel-starter"
+  },
+  "scripts": {
+    "build": "npm run build:riot & npm run build:parcel",
+    "build:riot": "riot --ext tag.html app/ app/tags.js",
+    "build:parcel": "parcel build index.html",
+    "watch": "npm run watch:riot & npm run watch:parcel",
+    "watch:riot": "riot --ext tag.html -w app/ app/tags.js",
+    "watch:parcel": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "riot",
+    "parcel",
+    "starter"
+  ],
+  "author": "Vladimir Marko",
+  "license": "ISC",
+  "dependencies": {
+    "riot": "^3.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "parcel-bundler": "^1.10.3"
+  }
+}
